@@ -1,14 +1,10 @@
 package com.kodelabs.boilerplate.domain.interactors;
 
-
 import com.kodelabs.boilerplate.domain.interactors.base.Interactor;
 
-
-public interface SampleInteractor extends Interactor {
-
+public interface WelcomingInteractor extends Interactor {
     interface Callback {
-        // TODO: Add interactor callback methods here
+        void onMessageRetrieved(String message);
+        void onRetrievalFailed(String error);
     }
-
-    // TODO: Add interactor methods here
 }
